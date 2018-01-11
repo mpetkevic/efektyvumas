@@ -1,0 +1,1 @@
+# efektyvumas
