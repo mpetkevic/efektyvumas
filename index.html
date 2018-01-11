@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="shortcut icon" href="images/orange-ico.png" type="image/png">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <title>Efektyvumas.com</title>
+</head>
+<body>
+    
+    <div class="karkasas">
+        <div class="header">
+            <a href="http://www.efektyvumas.com"><img class="logo" src="images/logo.png" alt="logo"></a>
+            <div class="mobile-menu" onclick="menuClick()">
+                <img class="hamburger" src="images/hamburger.svg" alt="">
+            </div>
+        </div>
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a onclick="hideMenu()" href="#vertinimas" class="vert">Vertiname esamą situaciją</a></li>
+                <li><a onclick="hideMenu()" href="#mokome" class="mok">Mokome komandą</a></li>
+                <li><a onclick="hideMenu()" href="#tobuliname" class="tobul">Tobuliname procesus</a></li>
+                <li><a onclick="hideMenu()" href="#stabilizuojame" class="stabil">Stabilizuojame</a></li>
+                <li><a onclick="hideMenu()" href="#rezultatas" class="rezult">Rezultatas</a></li>
+                <li><a onclick="hideMenu()" href="#lean" class="lean-m">Lean</a></li>
+                <li><a onclick="hideMenu()" href="#kontaktai-mobile" class="kontakt">Kontaktai</a></li>
+            </ul>
+        </nav>
+        <div class="right-menu"> 
+            <nav>
+                <ul>
+                    
+                    <li class="first"></li>
+                    <li><a href="#vertinimas" class="vert">Vertiname esamą situaciją</a></li>
+                    <li><a href="#mokome" class="mok">Mokome komandą</a></li>
+                    <li><a href="#tobuliname" class="tobul">Tobuliname procesus</a></li>
+                    <li><a href="#stabilizuojame" class="stabil">Stabilizuojame</a></li>
+                    <li><a href="#rezultatas" class="rezult">Rezultatas</a></li>
+                    <li><a href="#lean" class="lean">Lean</a></li>
+                    <li id="last"><a href="#kontaktai" class="kontakt">Kontaktai</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div id="ratas">
+                <img class="ratas"src="images/ratas.png" alt="">
+                <img class="ratas-efekt size" src="images/ratas-efektyvumas.png" alt="">
+                <a href="#vertinimas" class="vert"><img src="images/ratas-vertiname.png" alt="" class="ratas-vert size"></a>
+                <a href="#mokome" class="mok"><img src="images/ratas-mokome.png" alt="" class="ratas-mokome size"></a>
+                <a href="#tobuliname" class="tobul"><img src="images/ratas-tobuliname.png" alt="" class="ratas-tobul size"></a>
+                <a href="#stabilizuojame" class="stabil"><img src="images/ratas-stabilizuojame.png" alt="" class="ratas-stabil size"></a>
+                <a href="#rezultatas" class="rezult"><img src="images/ratas-rezultatas.png" alt="" class="ratas-rezult size"></a>
+            </div>
+            <div class="clearfix"></div>
+            <div id="vertinimas">
+                <img class="large-pic" src="images/vertiname.jpg" alt="">
+                <img class="small-pic" src="images/ratas-vertiname.png" alt="">
+                <div class="text-content">
+                    <p>Darbo vietoje vertiname esamus procesus, matuojame veiksmus, randame vertės nekuriančią veiklą, elgseną, kurią vėliau padedame pašalinti.</p>
+                    <p>Fiksuojame ir pateikiame tobulintinus ir sektinus pavyzdžius.</p>
+                    <p>Sudarome vertės srauto žemėlapį, randame siaurąsias grandinės vietas.</p>
+                    <p>Padedame nusistatyti viziją, pagrindinius įmonės veiklos rodiklius.</p>
+                    <p>Padedame nusistatyti viziją, pagrindinius įmonės veiklos rodiklius.
+                    </p>
+                    <p>Atliekame palaikančių turtą ir techniką tarnybų veiklos analizę.
+                    </p>
+                    <p>Teikiame rekomendacijas veiklos valdymui, planavimui, gerinimui.</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="mokome">
+                <img src="images/mokome.jpg" alt="" class="large-pic">
+                <img src="images/ratas-mokome.png" alt="" class="small-pic">
+                <div class="text-content">
+                    <p>Išmokome darbuotojus atpažinti švaistymą, vertės nekuriančią veiklą.
+                    </p>
+                    <p>Mokome naudoti Lean įrankius, savarankiškai taikyti juos atpažįstant nuostolius, tobulinant procesus, stabilizuojant procesus.</p>
+                    <p>Paliekame mokymų medžiagą, išmokome perteikti žinias visiems įmonės darbuotojams.</p>
+                    <p>Mokome darbuotojus ugdymo, lyderystės, informacijos pasidalinimo, efektyvaus problemų sprendimo.</p>
+                    <p>Pasidaliname daugiamete veikloje pritaikoma patirtimi.</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="tobuliname">
+                <img src="images/tobuliname.jpg" alt="" class="large-pic">
+                <img src="images/ratas-tobuliname.png" alt="" class="small-pic">
+                <div class="text-content">
+                    <p>Kartu su darbuotojais taikome Lean metodiką, įrankius, atpažįstame ir šaliname nuostolius, švaistymą.</p>
+                    <p>Padedame susitvarkyti ir vizualizuoti darbo vietas, kad darbas būtų efektyvesnis, našesnis, užtikrinta kokybė, sauga darbe.</p>
+                    <p>Sisteminame atsargų valdymą, efektyviname perėjimus.</p>
+                    <p>Sisteminame kasdienių ir įsisenėjusių problemų sprendimą, padedame rasti ir pašalinti esmines priežastis. Į problemų sprendimą įtraukiame visų pakopų darbuotojus.
+                    </p>
+                    <p>Diegiame darbuotojų pasiūlymų sistemą, kuri užtikrina nuolatinį tobulėjimą, procesų ir aplinkos gerinimą.</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="stabilizuojame">
+                <img src="images/stabilizuojame.jpg" alt="" class="large-pic">
+                <img src="images/ratas-stabilizuojame.png" alt="" class="small-pic">
+                <div class="text-content">
+                    <p>Standartizuojame darbą, padedame kurti standartus.</p>
+                    <p>Sukuriame mechanizmą, palaikantį ir nuolat gerinantį pasiektą rezultatą.
+                    </p>
+                    <p>Pateikiame visą reikiamą medžiagą situacijos stabilizavimui, nuolatiniam procesų gerinimui.</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="rezultatas">
+                <img src="images/rezultatas.jpg" alt="" class="large-pic">
+                <img src="images/ratas-rezultatas.png" alt="" class="small-pic">
+                <div class="text-content">
+                    <p>Priklausomai nuo esamos situacijos, pasiekiamas skirtingas rezultatas.<br>
+                    Tačiau neabejotinai jis yra.</p>
+                    <p>Dažniausiai praktikoje jau pirmuose žingsniuose pasiekiama keliasdešimties procentų pagerėjimas:</p>
+                    <ul>
+                        <li>sumažinami kaštai,</li>
+                        <li>sutrumpinamas produkto tiekimo terminas,</li>
+                        <li>padidinamas produktyvumas, efektyvumas, stabilizuojamas plano vykdymas,</li>
+                        <li>pagerinama produkto kokybė, sumažinamas brokas,</li>
+                        <li>sumažinami patiriami medžiagų nuostoliai,</li>
+                        <li>sumažinamas atsargų lygis, sugrąžinamos įšaldytos lėšos,</li>
+                        <li>sugeneruojama vieta sandėliavimui ir procesui,</li>
+                        <li>sutaupoma energija, gamtiniai ištekliai.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="lean">
+                <div class="nuostoliai"></div>
+                <div class="lean-properties">
+                    <p>Taikome pagrindinius Lean įrankius:</p>
+                    <p>5S - <span>darbo vietos susitvarkymas (vizualizacija);</span></p>
+                    <p>5W - <span>darbo standartizavimas;
+                    </span></p>
+                    <p>PDCA, A3 – <span>efektyvus  problemų sprendimas;</span></p>
+                    <p>SMED - <span>greiti perėjimai;</span></p>
+                    <p>Kanban - <span>atsargų valdymas;</span></p>
+                    <p>TPME - <span>įrangos priežiūra;</span></p>
+                    <p>Kaizen - <span>patobulinimų pasiūlymų sistema.</span></p>
+                </div>
+                <div class="lean-content">
+                    <h3>Lean</h3>
+                    <p>LEAN – procesų efektyvinimo sistema, valdymo filosofija, nuolat eliminuojanti nekuriančią vertės veiklą.</p>
+                    <p>Pagrindiniai tikslai – efektyvinti, optimizuoti resursų, išteklių panaudojimą, didinant vertę klientui ir konkurencinį panašumą.</p>
+                    <p>Lean sistema padeda gerinti pagrindinius veiklos parametrus:
+                        mažina kaštus ir tiekimo laiką, didina produktyvumą, gerina kokybę, optimizuoja atsargas, turto, resursų panaudojimą.</p>
+                    <p>Sistemos diegimas ugdo darbuotojus, didina jų įsitraukimą, stiprina komandą, atveria galimybes panaudoti darbuotojų potencialą.</p>
+                </div>
+            </div>
+            <div class="lean-mobile" id="lean-mobile">
+                <h3>Lean</h3>
+                <p>LEAN – procesų efektyvinimo sistema, valdymo filosofija, nuolat eliminuojanti nekuriančią vertės veiklą.</p>
+                <p>Pagrindiniai tikslai – efektyvinti, optimizuoti resursų, išteklių panaudojimą, didinant vertę klientui ir konkurencinį panašumą.</p>
+                <p>Lean sistema padeda gerinti pagrindinius veiklos parametrus:
+                    mažina kaštus ir tiekimo laiką, didina produktyvumą, gerina kokybę, optimizuoja atsargas, turto, resursų panaudojimą.</p>
+                <p>Sistemos diegimas ugdo darbuotojus, didina jų įsitraukimą, stiprina komandą, atveria galimybes panaudoti darbuotojų potencialą.</p>
+                <h4>Taikome pagrindinius Lean įrankius:</h4>
+                <p class="lean-prop">5S - <span>darbo vietos susitvarkymas (vizualizacija);</span></p>
+                <p class="lean-prop">5W - <span>darbo standartizavimas;
+                </span></p>
+                <p class="lean-prop">PDCA, A3 – <span>efektyvus  problemų sprendimas;</span></p>
+                <p class="lean-prop">SMED - <span>greiti perėjimai;</span></p>
+                <p class="lean-prop">Kanban - <span>atsargų valdymas;</span></p>
+                <p class="lean-prop">TPME - <span>įrangos priežiūra;</span></p>
+                <p class="lean-prop">Kaizen - <span>patobulinimų pasiūlymų sistema.</span></p>
+            </div>
+            <div class="clearfix"></div>
+            <div id="kontaktai">
+                <div class="left-block">
+                    <p>Svajūnas Gečas</p>
+                    <p class="efektyviu">Efektyvių procesų ekspertas</p>
+                    <p>T: <a href="tel:+37068266131" class="telefonas">+37068266131</a></p>
+                    <p>E: <a href="mailto:svajunas@efektyvumas.com">svajunas@efektyvumas.com</a></p>
+                    <p><a href="http://www.efektyvumas.com">www.efektyvumas.com</a></p>
+                    <p><a href="https://www.linkedin.com/in/svaj%C5%ABnas-ge%C4%8Das-565a01110" target="_blank"><img src="images/linkedin.png" class="linkedin" alt=""></a></p>
+                    <form action="">
+                        <input type="text" placeholder="Įveskite vardą">
+                        <input type="text" placeholder="Įveskite El. Paštą">
+                        <input type="text" placeholder="Įveskite Tel. Numerį">
+                        <textarea name="" id="" placeholder="Jūsų žinutė"></textarea>
+                        <button type="submit">Siųsti</button>
+                    </form>
+                </div>
+                <div class="right-block">
+                    <img src="images/kontaktai.jpg" alt="">
+                    <p>Efektyvus, kuriantis vertę, ambicingas, patyręs vadovas, projektų valdymo ir nuolatinio tobulinimo ekspertas.</p>
+                    <p>Orientuotas į rezultatą, kūrybingas, entuziastingas, motyvuojantis ir vedantis komandą į sėkmę.</p>
+                    <p>Profesionaliai apmokytas Lean, projektų valdymo, koučingo.</p>
+                    <p>20 metų patirtis gamyboje.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="kontaktai-mobile">
+                <img src="images/kontaktai.jpg" alt="">
+                <p>Svajūnas Gečas</p>
+                <p>Efektyvių procesų ekspertas</p>
+                <p>Efektyvus, kuriantis vertę, ambicingas, patyręs vadovas, projektų valdymo ir nuolatinio tobulinimo ekspertas.</p>
+                <p>Orientuotas į rezultatą, kūrybingas, entuziastingas, motyvuojantis ir vedantis komandą į sėkmę.</p>
+                <p>Profesionaliai apmokytas Lean, projektų valdymo, koučingo.</p>
+                <p>20 metų patirtis gamyboje.</p>
+                <p>T: <a href="tel:+37068266131" class="telefonas">+37068266131</a></p>
+                <p>E: <a href="mailto:svajunas@efektyvumas.com">svajunas@efektyvumas.com</a></p>
+                <p><a href="http://www.efektyvumas.com">www.efektyvumas.com</a></p>
+                <p><a href="https://www.linkedin.com/in/svaj%C5%ABnas-ge%C4%8Das-565a01110" target="_blank"><img src="images/linkedin.png" class="linkedin" alt=""></a></p>
+                <form action="">
+                    <input type="text" placeholder="Įveskite vardą">
+                    <input type="text" placeholder="Įveskite El. Paštą">
+                    <input type="text" placeholder="Įveskite Tel. Numerį">
+                    <textarea name="" id="" placeholder="Jūsų žinutė"></textarea>
+                    <button type="submit">Siųsti</button>
+                </form>
+            </div>
+            <div class="footer">
+                <span>© Visos teisės saugomos - UAB "EFEKTYVUMAS".</span>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

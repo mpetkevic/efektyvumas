@@ -1,0 +1,343 @@
+@mixin mobile-content {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 14px;
+    .large-pic {
+        display: none;
+    }
+
+    .small-pic {
+        width: 60%;
+        margin: 0 auto 15%;
+        display: block;
+    }
+
+    .text-content {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 90%; 
+        height: 60vh;   
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        position: fixed;
+        background-color: rgb(8, 28, 47);
+        .mobile-menu {
+            display: inline-block;
+            margin-top: 4%;
+            width: 10%;
+        }
+    }
+
+    .mobile-menu-nav {
+        position: fixed;
+        display: none;;
+        z-index: 1;
+        top: 10%;
+        width: 100%;
+        background-color: rgb(8, 28, 47);
+        
+
+        ul {
+            -webkit-padding-start: 0;
+            -moz-padding-start: 0;
+            li {
+                list-style: none;
+                width: 100%;
+                text-align: center;
+                color: white;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: white;
+                    padding: 1% 0;
+
+                    &:hover {
+                        color: #a45330;
+                    }
+                }
+            }
+        }
+    }
+
+    .right-menu {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        padding-top: 100px;
+    
+        #ratas {
+            margin-bottom: 40%;
+            .ratas-efekt {
+                top: 0;
+                right: 38%;
+                width: 28%;
+            }
+
+            .ratas-vert {
+                top: 16%;
+                right: 10%;
+                width: 26%;
+            }
+
+            .ratas-mokome {
+                top: 54%;
+                right: 10%;
+                width: 27%;
+            }
+
+            .ratas-tobul {
+                top: 80%;
+                right: 33%;
+                width: 27%;
+            }
+
+            .ratas-stabil {
+                top: 64%;
+                right: 64%;
+                width: 26%;
+            }
+
+            .ratas-rezult {
+                top: 19%;
+                right: 63%;
+                width: 27%;
+            }
+
+        }
+
+        #lean {
+            .nuostoliai {
+                background-position-y: 33%;
+                background-size: 100%;
+            }
+
+            .lean-properties {
+                padding: 7% 0 0 8%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        .mobile-menu {
+            margin-top: 5%;
+        }
+
+        .logo{
+            width: 25%;
+        }
+    }
+
+    .content {
+
+        width: 100%;
+        float: none;
+        #ratas {
+            
+        }
+        #vertinimas, #mokome, #tobuliname, #stabilizuojame, #rezultatas {
+            @include mobile-content();
+        }
+
+        #rezultatas {
+            ul {
+                text-align: left;
+                padding-left: 25%;
+            }
+        }
+
+        #lean {
+            display: none;
+        }
+
+        .lean-mobile {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+
+            h3 {
+                font-size: 40px;
+
+            }
+
+            h4 {
+                margin-top: 10%;
+            }
+
+            .lean-prop {
+                text-align: left;
+                padding-left: 30%;
+            }
+
+            span {
+                font-size: 14px;
+                color: #a45330;
+            }
+        }
+
+        #kontaktai {
+            display: none;
+        }
+
+        .kontaktai-mobile {
+            display: block;
+            width: 90%;
+            margin: 40% auto;
+            text-align: center;
+            font-size: 14px;
+
+            img {
+                width: 70%;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .telefonas {
+                text-decoration: underline;
+                color: #a45330;
+            }
+
+            .linkedin {
+                width: 25%;
+
+            }
+
+            form {
+                transition: 1s ease;
+
+                input, textarea {
+                    display: block;
+                    background-color: #1c2b35;
+                    border: none;
+                    border-bottom: 1px solid #a45330;
+                    outline: none;
+                    width: 90%;
+                    height: 30px;
+                    margin:0 auto 4%;
+                    font-size: 14px;
+                    text-align: center;
+                    color: white; 
+
+                    &:hover, &:active {
+                        border-bottom: 1px solid #565a5e;
+
+                        &::placeholder {
+                            color: #d7d9c2;
+                        }
+                    }
+
+                    
+                }
+                textarea {
+                    height: 90px;
+                    resize: none;
+                }
+                button {
+                    display: block;
+                    background: white;
+                    border: none;
+                    outline: none;
+                    width: 130px;
+                    height: 30px;
+                    font-size: 14px;
+                    color: #565a5e;
+                    margin: 0 auto;
+                }
+            }
+    }
+
+    
+
+    .right-menu {
+        nav {
+            display: block;
+        }
+    }
+
+    .footer {
+        height: 3%;
+        .footer-left, .footer-right {
+            float: none;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
+}}
+
+@media (max-width: 600px) {
+    .header {
+        .logo {
+            width: 30%;
+        }
+
+        .mobile-menu {
+            .hamburger {
+                width: 50%;
+                padding-left: 15%;
+                padding-top: 13%;
+            }
+        }
+    }
+
+    .content {
+
+        #rezultatas {
+            ul {
+                padding-left: 20%;
+            }
+        }
+
+        .lean-mobile {
+            .lean-prop {
+                text-align: left;
+                padding-left: 14%;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        .logo {
+            width: 40%;
+        }
+
+        .mobile-menu {
+            .hamburger {
+                width: 50%;
+                padding-left: 15%;
+                padding-top: 25%;
+            }
+        }
+    }
+
+    .content {
+        #rezultatas {
+            ul {
+                padding-left: 15%;
+            }
+        }
+
+        .lean-mobile {
+            .lean-prop {
+                text-align: left;
+                padding-left: 10%;
+            }
+        }
+    }
+}
